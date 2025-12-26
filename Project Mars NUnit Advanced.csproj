@@ -10,6 +10,32 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="TestData\AddLanguage.json" />
+    <None Remove="TestData\DuplicateLanguage.json" />
+    <None Remove="TestData\EditLanguage.json" />
+    <None Remove="TestData\EmptyLanguageField.json" />
+    <None Remove="TestData\NumberofLanguages.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="TestData\AddLanguage.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\DuplicateLanguage.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\EditLanguage.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\EditLanguageLevel.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\EmptyLanguageField.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\NumberofLanguages.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="TestData\Profile.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

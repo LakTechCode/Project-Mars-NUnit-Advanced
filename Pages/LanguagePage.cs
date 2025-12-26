@@ -165,5 +165,10 @@ namespace Project_Mars_NUnit.Pages
             }
 
         }
+
+        public string GetSuccessMessage()
+        {
+            return _driver.FindElement(By.XPath("/html/body/div[1]/div")).Text;
+        }
     }
 }
