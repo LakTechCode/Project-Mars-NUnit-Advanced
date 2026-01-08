@@ -11,9 +11,14 @@
 
   <ItemGroup>
     <None Remove="TestData\AddLanguage.json" />
+    <None Remove="TestData\AddSkill.json" />
     <None Remove="TestData\DuplicateLanguage.json" />
+    <None Remove="TestData\DuplicateSkill.json" />
     <None Remove="TestData\EditLanguage.json" />
+    <None Remove="TestData\EditSkill.json" />
+    <None Remove="TestData\EditSkillLevel.json" />
     <None Remove="TestData\EmptyLanguageField.json" />
+    <None Remove="TestData\EmptySkillField.json" />
     <None Remove="TestData\NumberofLanguages.json" />
   </ItemGroup>
 
@@ -21,7 +26,13 @@
     <Content Include="TestData\AddLanguage.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="TestData\AddSkill.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="TestData\DuplicateLanguage.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\DuplicateSkill.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\EditLanguage.json">
@@ -30,7 +41,16 @@
     <Content Include="TestData\EditLanguageLevel.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="TestData\EditSkill.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\EditSkillLevel.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="TestData\EmptyLanguageField.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\EmptySkillField.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\NumberofLanguages.json">
