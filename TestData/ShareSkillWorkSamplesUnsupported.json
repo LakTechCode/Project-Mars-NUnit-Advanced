@@ -1,0 +1,4 @@
+{
+  "WorkSamplePath": "TestData/AddNewShareSkill.json",
+  "ExpectedMessage":  "Max file size is 2 MB and supported file types are gif / jpeg / png / jpg / doc(x) / pdf / txt / xls(x)"
+}

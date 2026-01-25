@@ -10,20 +10,21 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="TestData\AddLanguage.json" />
+    <None Remove="TestData\AddNewShareSkill.json" />
     <None Remove="TestData\AddSkill.json" />
-    <None Remove="TestData\DuplicateLanguage.json" />
     <None Remove="TestData\DuplicateSkill.json" />
-    <None Remove="TestData\EditLanguage.json" />
     <None Remove="TestData\EditSkill.json" />
     <None Remove="TestData\EditSkillLevel.json" />
-    <None Remove="TestData\EmptyLanguageField.json" />
     <None Remove="TestData\EmptySkillField.json" />
-    <None Remove="TestData\NumberofLanguages.json" />
+    <None Remove="TestData\Sample.pdf" />
+    <None Remove="TestData\ShareSkillWorkSamplesUnsupported.json" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="TestData\AddLanguage.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddNewShareSkill.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\AddSkill.json">
@@ -57,6 +58,15 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\Profile.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\Sample.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkillEmptyField.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkillWorkSamplesUnsupported.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
