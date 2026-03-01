@@ -139,8 +139,8 @@ namespace Project_Mars_NUnit.Pages
 
         public void SelectLocationType(string LocationType)
         {
-            string value = "1";
-            var locationInput = _driver.FindElement(By.XPath($"//input[@name='locationType' and @value='{value}']"));
+
+            var locationInput = _driver.FindElement(By.XPath($"//input[@name='locationType' and @value='{LocationType}']"));
             ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].click();", locationInput);
 
         }

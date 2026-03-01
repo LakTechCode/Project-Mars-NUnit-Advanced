@@ -17,7 +17,7 @@ namespace Project_Mars_NUnit.Drivers
 
         public static IWebDriver InitDriver()
         {
-            new DriverManager().SetUpDriver(new ChromeConfig());
+          
             ChromeOptions options = new ChromeOptions();
             options.AddUserProfilePreference("profile.password_manager_leak_detection", false);
             driver = new ChromeDriver(options);
