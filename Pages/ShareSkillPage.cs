@@ -1,13 +1,14 @@
 ﻿using AngleSharp.Dom;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using Project_Mars_NUnit.Models;
+using Project_Mars_NUnit.Utilities;
 using SeleniumExtras.WaitHelpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Project_Mars_NUnit.Utilities;
 
 
 namespace Project_Mars_NUnit.Pages
@@ -16,6 +17,7 @@ namespace Project_Mars_NUnit.Pages
     {
         private readonly IWebDriver _driver;
         private readonly WebDriverWait _wait;
+        private ShareSkillPage _shareskillpage;
         public IWebDriver Driver => _driver;
 
         //locators
@@ -250,7 +252,23 @@ namespace Project_Mars_NUnit.Pages
 
             return deleteButtons.Count > 0;
         }
+        public void CreateSkill(ShareSkillData shareSkillData)
+        {
+            AddTitle(shareSkillData.Title);
+            AddDescription(shareSkillData.Description);
+            AddCategory(shareSkillData.Category);
+            AddSubcategory(shareSkillData.Subcategory);
+            AddTags(shareSkillData.Tags);
+            SelectServiceType("0");
+            SelectLocationType("1");
+            SelectCredit("false");
+            AddCredit(shareSkillData.Credit);
+            AddWorkSamples(shareSkillData.WorkSamplePath);
+            SelectActive("true");
+            ClickSave();
 
+            
+        }
     }
 }
 

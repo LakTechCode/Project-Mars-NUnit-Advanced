@@ -20,7 +20,7 @@ namespace Project_Mars_NUnit.Drivers
           
             ChromeOptions options = new ChromeOptions();
             options.AddUserProfilePreference("profile.password_manager_leak_detection", false);
-            driver = new ChromeDriver(options);
+            IWebDriver driver = new ChromeDriver(options);
             driver.Navigate().GoToUrl("http://localhost:5003/");
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);

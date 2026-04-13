@@ -22,7 +22,8 @@ namespace Project_Mars_NUnit.Pages
         private readonly By SeleniumSubcategory = By.XPath("//*[@id=\"service-search-section\"]/div[2]/div/section/div/div[1]/div[1]/div/a[5]");
         private readonly By OnlineButton = By.XPath("//*[@id=\"service-search-section\"]/div[2]/div/section/div/div[1]/div[5]/button[1]\r\n");
         private readonly By OnsiteButton = By.XPath("//*[@id=\"service-search-section\"]/div[2]/div/section/div/div[1]/div[5]/button[2]");
-
+        private readonly By SkillCard = By.XPath("//*[@id=\"service-search-section\"]/div[2]/div/section/div/div[2]/div/div[2]/div/div/div/a");
+        
         public SearchSkillPage(IWebDriver driver) // Inject IWebDriver directly
         {
             _driver = driver;
@@ -87,6 +88,14 @@ namespace Project_Mars_NUnit.Pages
             var onsiteButtonElement = _wait.Until(ExpectedConditions.ElementToBeClickable(OnsiteButton));
             onsiteButtonElement.Click();
         }
+
+        public void ClickSkills()
+        {
+            var SkillElement = _wait.Until(ExpectedConditions.ElementToBeClickable(SkillCard));
+            SkillElement.Click();
+        }
+
+        
 
     }
 }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Project_Mars_NUnit.Pages
 {
-    public class HomePage
+    public class HomePage ()
     {
         
         public void NavigateToSkillsPage(IWebDriver driver)
@@ -37,7 +37,21 @@ namespace Project_Mars_NUnit.Pages
 
         }
 
-        
+        public void NavigateToProfileShareSkillPage(IWebDriver driver)
+
+
+        {
+            IWebElement shareskill = driver.FindElement(By.XPath("//*[@id=\"account-profile-section\"]/div/section[1]/div/div[2]/a"));
+            shareskill.Click();
+        }
+
+        public void NavigateToServiceShareSkillPage(IWebDriver driver)
+
+
+        {
+            IWebElement shareskill = driver.FindElement(By.XPath("//*[@id=\"service-detail-section\"]/section[1]/div/div[2]/a"));
+            shareskill.Click();
+        }
 
     }
 }
