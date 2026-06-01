@@ -1,0 +1,24 @@
+[
+  {
+    "Title": "Test Analyst Intern",
+    "Description": "I assist with software testing by creating test cases, executing test cycles, identifying defects, and supporting QA processes.",
+    "Category": "Test Automation",
+    "Subcategory": "Selenium",
+    "Tags": [ "Software Testing", "C#" ],
+    "WorkSamplePath": "TestData/Sample.pdf",
+    "Credit": "3"
+    
+  },
+
+  {
+    "Title": "Yoga",
+    "Description": "I assist with teaching yoga poses.",
+    "Category": "Fun & Lifestyle",
+    "Subcategory": "Health, Nutrition & Fitness",
+    "Tags": [ "Exercise", "Breathing" ],
+    "WorkSamplePath": "TestData/Sample.pdf",
+    "Credit": "3"
+    
+  }
+
+]

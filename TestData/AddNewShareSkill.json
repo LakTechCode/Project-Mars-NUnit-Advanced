@@ -1,0 +1,10 @@
+{
+  "Title": "Test Analyst Intern",
+  "Description": "I assist with software testing by creating test cases, executing test cycles, identifying defects, and supporting QA processes.",
+  "Category": "Test Automation",
+  "Subcategory": "Selenium",
+  "Tags": [ "Software Testing", "C#" ],
+  "WorkSamplePath": "TestData/Sample.pdf",
+  "Credit": "3",
+  "ExpectedMessage":  "Service Listing Added successfully"
+}
